@@ -1,0 +1,861 @@
+@font-face {
+    font-family: cairo;
+    src: url(font/Cairo-Regular.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+:root {
+    font-family: cairo;
+    background-color: #EDF1D6;
+    box-sizing: border-box;
+    --bacecolor: #9DC08B;
+    --bacecolor2: #609966;
+    --bacehover: #3A1078;
+    --fontcolor: #403426;
+}
+
+::selection {
+    background-color: var(--bacecolor);
+    color: var(--fontcolor);
+}
+
+.clear {
+    content: "";
+    clear: both;
+}
+
+.hr {
+    border-bottom: 1px solid var(--bacecolor, rgb(105, 100, 100));
+}
+
+a {
+    text-decoration: none;
+    color: var(--fontcolor)
+}
+
+/* start header */
+header {
+    font-family: cairo;
+    text-align: center;
+    background-color: #DDD9CE;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+header h4 {
+    float: right;
+    margin: 0;
+    padding-top: 30px;
+    direction: ltr;
+}
+
+header h2 i {
+    color: var(--fontcolor, #16812a);
+    margin: 0;
+}
+
+header h3 {
+    display: inline-block;
+    color: #16812a;
+    margin: 0;
+    padding-top: 20px;
+
+}
+
+header h1 {
+    display: inline-block;
+    color: var(--fontcolor, #403426);
+    padding-right: 20px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+header a {
+    margin-right: 100px;
+    color: var(--fontcolor, #000);
+    font-size: 22px;
+    font-weight: 400;
+    border-bottom: 2px solid #DDD9CE;
+    /* visibility: hidden;   */
+}
+
+header a:hover {
+    color: #16812a;
+    border-bottom: 2px solid #16812a;
+
+}
+
+header div.logo {
+    float: left;
+    width: 120px;
+    padding-left: 20px;
+}
+
+/* end header */
+/* start nav */
+nav {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 50px;
+    background-color: #d5dbaf;
+    position: sticky;
+    top: 0px;
+
+}
+
+nav div.nav1 {
+    float: right;
+}
+
+nav div.nav1 a {
+    display: inline-block;
+    padding: 10px 5px;
+    margin-right: 30px;
+    color: var(--fontcolor);
+    border-bottom: 2px solid #d5dbaf;
+}
+
+nav div.nav1 a:hover {
+    color: #16812a;
+    border-bottom: 2px solid #16812a;
+}
+
+nav div.nav1 a.lasta {
+    /* visibility: hidden; */
+}
+
+nav div.nav2 {
+    float: left;
+}
+
+nav div.nav2 a i {
+    display: inline-block;
+    font-size: 28px;
+    padding: 10px 5px;
+    margin-left: 10px;
+    border-bottom: 2px solid #d5dbaf;
+}
+
+nav div.nav2 a i:hover {
+    color: #16812a;
+    border-bottom: 2px solid #16812a;
+}
+
+.fa-square-facebook {
+    color: #1877F2;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-instagram {
+    color: #FFA34C;
+}
+
+/* end nav */
+/* start nav */
+main {
+    padding: 50px 75px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+main section.main {
+    padding: 50px 0;
+}
+
+main section.main div.mainphoto {
+    width: 40%;
+    border: 1px solid #C0C4CF;
+    background-color: #777D8B;
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    float: left;
+}
+
+main section.main div.mainp {
+    width: 40%;
+    text-align: justify;
+    font-size: 30px;
+    line-height: 50px;
+
+
+}
+
+main section.main div.mainp h2 {
+    text-decoration-style: solid;
+    -moz-text-decoration-style: solid;
+    text-decoration-color: var(--bacecolor2);
+    -moz-text-decoration-color: var(--bacecolor2);
+    text-decoration-line: underline;
+    -moz-text-decoration-line: underline;
+    color: var(--fontcolor);
+}
+
+main section.main div.mainp p {}
+
+main section#about {
+    padding: 50px 0;
+}
+
+main section#about div#aboutphoto {
+    float: right;
+}
+
+main section#about div#aboutp {
+    float: left;
+    width: 50%;
+}
+
+main section#about div#aboutp h2 {
+    text-decoration: none;
+    font-size: 18px;
+    color: #16812a;
+}
+
+main section#about div#aboutp h2 span {
+    font-size: 30px;
+    padding-right: 25px;
+    color: var(--fontcolor);
+}
+
+main section#about div#aboutp p {
+    font-size: 24px;
+}
+
+main section#server {
+    padding: 50px 0;
+}
+
+main section#server div#serverp p {
+    font-size: 22px;
+}
+
+/* start form */
+form {
+    padding: 25px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+label {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+form input {
+    display: block;
+    margin: 25px auto;
+    width: 90%;
+    padding: 25px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+form input::selection {
+    border: 1px solid var(--bacecolor2);
+}
+
+input[type="submit"] {
+    border: 1px solid var(--bacecolor2);
+    background-color: var(--bacecolor);
+    color: var(--fontcolor);
+    font-size: 22px;
+    width: fit-content;
+    padding: 10px 30px;
+}
+
+input[type="submit"]:hover {
+    border: 1px solid var(--bacecolor2);
+    background-color: var(--bacecolor2);
+
+}
+
+/* end form */
+
+/* end main */
+/* start footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px 5px;
+}
+
+footer h4 {
+    margin-bottom: 5px;
+    padding-right: 100px;
+}
+
+footer div.adress1 {
+    padding: 10px 0;
+}
+
+footer div.adress1 div.adress11 {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+footer div.adress1 div.adress11 h3 {
+    display: inline-block;
+
+}
+
+footer div.adress1 div.adress11 h3 i {}
+
+footer div.adress1 div.adress11 p {
+    display: inline-block;
+
+}
+
+footer div.adress1 div.adress12 {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+footer div.adress1 div.adress12 h3 {
+    display: inline-block;
+}
+
+footer div.adress1 div.adress12 h3 i {}
+
+footer div.adress1 div.adress12 p {
+    display: inline-block;
+}
+
+footer div.adress2 {
+    padding: 10px 0;
+}
+
+footer div.adress2 div.adress21 {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+footer div.adress2 div.adress21 h3 {
+    display: inline-block;
+}
+
+footer div.adress2 div.adress21 h3 i {}
+
+footer div.adress2 div.adress21 p {
+    display: inline-block;
+}
+
+footer div.adress2 div.adress22 {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+footer div.adress2 div.adress22 h3 {
+    display: inline-block;
+}
+
+footer div.adress2 div.adress22 h3 i {
+
+}
+
+footer div.adress2 div.adress22 p {
+    display: inline-block;
+}
+
+footer p.copy1 {
+    margin: 5px auto;
+    text-align: center;
+}
+footer p.copy1 a{
+    color:#fff;
+}
+footer p.copy1 a:hover{
+    color:#94ac0c;
+}
+footer div.nav2 {
+    visibility: hidden;
+}
+footer div.nav2 a.lang {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    border-bottom: 2px solid #000;
+    padding: 0;
+    display: none;
+}
+footer .nav2 a.lang:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+
+}
+
+/* end footer */
+@media screen and (max-width: 1160px) {
+    main section#server div#serverp p {
+        line-height: 40px;
+        font-size: 18px;
+    }
+    main section.main div.mainp p {
+        line-height: 40px;
+        font-size: 18px;
+    }
+    main section#about div#aboutp p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 900px) {
+    main section#server div#serverp p {
+        line-height: 30px;
+        font-size: 18px;
+    }
+    header {
+        text-align: right;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+    }
+    
+    header h4 {
+        display: none;
+        padding-top: 0;
+    }
+    
+    header h3 {
+        margin: 0;
+        padding:0 10px;
+        align-self: auto;
+        text-align: left;
+        order: -1;
+        flex: 20%;
+    
+    }
+    
+    header h1 {
+        margin: 0;
+        padding: 0px;
+        order: -1;
+        flex: 60%;
+    }
+    
+    header a {
+        margin-right: 10px;
+
+    }
+    
+    
+    header div.logo {
+
+        padding-left: 0px;
+        margin-right: 85px;
+    }
+}
+@media screen and (max-width: 850px) {
+    header h1 {
+    font-size: 20px;    
+    }
+    header h3 {
+
+    }
+    main section#server div#serverp p {
+        line-height: 20px;
+        font-size: 16px;
+    }
+    main section.main div.mainp p {
+        line-height: 20px;
+        font-size: 18px;
+    }
+    main section#about div#aboutp p {
+        font-size: 16px;
+    }
+    nav {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    main {
+        padding: 50px ;
+        width: 85%;
+        margin: 0 auto;
+    }
+   
+    nav div.nav2 {
+        padding-right: 50px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    nav div.nav1 {
+        float: none;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    nav a {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 785px) {
+    header h3 {
+        font-size: 16px;
+    }
+    nav {
+        padding: 5px 25px;
+    }
+    nav div.nav1 a {
+        padding: 10px 0;
+        margin: 0 auto;
+        flex: 80%;
+    }
+    nav div.nav1  {
+        padding: 5px 0;
+        margin: 0 auto;
+        flex: 80%;
+    }
+    nav div.nav2 {
+        font-size: 16px;
+        margin: 0 auto;
+        flex: 20%;
+    }
+        
+    footer div.adress1 div.adress12 {
+        display:block;
+        padding-right: 10px;
+    }
+    footer div.adress2 div.adress22 {
+        display: block;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 650px) {
+    main section#about div#aboutp h2 {
+        font-size: 16px;
+        padding-right: 5px;
+        font-weight: 200;
+    }
+    main section#about div#aboutp h2 span {
+        font-size: 16px;
+        padding-right: 5px;
+        font-weight: 400;
+    }
+    footer div.adress1 div.adress11 {
+        display: inline-block;
+        font-size: 14px;
+    }
+    nav div.nav2 {
+        padding-right: 0px;
+    }
+    nav div.nav1 a {
+        padding: 5px 0;
+        margin-right: 10px;
+        font-size: 16px;
+        font-weight: 200;
+    }
+    nav div.nav2 a {
+        padding: 5px 0;
+        margin-right: 10px;
+        font-size: 16px;
+        font-weight: 200;
+    }
+    header h3 {
+        font-size: 18px;
+        flex:30%;
+    }
+    header h1 {
+        font-size: 24px;
+        flex: 70%;
+    }
+    header a {
+        margin-right: 10px;
+        font-size: 20;
+    }
+    header div.logo {
+        padding-left: 0px;
+        margin-right: 50px;
+        width: 200px;
+    }
+    label {
+        font-size: 26px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 595px){
+    header {
+        padding: 0 15px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 22px;
+    }
+    header a {
+        font-size: 20px;
+    }
+    header div.logo {
+        margin-right: 25px;
+        width: 200px;
+    }
+    header h3 {
+        font-size: 14px;
+        flex: 25%;
+    }
+    main section#about div#aboutp p {
+        font-size: 14px;
+    }
+    nav {
+        display: flex;
+        padding: 5px 15px;
+    }
+    nav div.nav2 {
+        padding-right: 0px;
+        flex: 30%;
+    }
+    nav div.nav1 {
+        flex: 70%;
+    }
+    nav div.nav1 a{
+        margin: 0;
+    }
+    nav div.nav2 a{
+        margin: 0;
+    }
+    footer div.adress1 {
+        font-size: 18xp;
+    }
+
+}
+@media screen and (max-width: 560px) {
+    footer div.adress1 {
+        font-size: 8xp;
+    }
+    footer i {
+        font-size: 12px;
+    }
+    footer div.adress1 div.adress11 {
+        display: flex;
+
+    }
+    footer div.adress1 {
+        flex: 5%;
+    }
+}
+@media screen and (max-width: 560px) {
+    header h1 {
+        font-size: 20px;
+    }
+    header h3 {
+        font-size: 12px;
+        flex: 30%;
+    }
+    header div.logo {
+        margin-right: 25px;
+        width: 210px;
+    }
+    nav {
+        padding: 5px 5px;
+    }
+    nav div.nav2 {
+        padding-right: 0px;
+        flex: 20%;
+    }
+    nav div.nav1 {
+        flex: 80%;
+        font-size: 10px;
+        
+    }
+}
+@media screen and (max-width: 520px) {
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    header h1 {
+        flex-grow: 5;
+    }
+    header div.logo {
+        margin-right: 0;
+        flex-shrink: 1;
+    }
+    header a {
+        margin-right: 0;
+    }
+    header h3 {
+        flex-grow: 3;
+    }
+    nav {
+        padding: 5px 5px;
+    }
+    nav div.nav2 {
+        padding-right: 0px;
+        flex: 10%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    nav div.nav1 {
+        flex: 90%;
+        font-size: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        
+    }
+    nav div.nav1 a {
+        padding: 5px 0;
+        margin-right: 5px;
+        font-size: 16px;
+        font-weight: 200;
+        align-self: auto;
+    }
+    nav div.nav2 a{
+        padding: 0;
+        margin: 0;
+
+    
+    }
+
+}
+@media screen and (max-width: 495px) {
+    header {
+        padding: 0;
+    }
+    header h1 {
+        font-size: 22px;
+        padding-right: 10px;
+       
+    }
+    header h3 {
+        margin: 0 auto;
+        font-size: 12px;
+        padding: 0 5px 0 0;
+    }
+    header a {
+        margin: 0 auto;
+    }
+    header div.logo {
+        margin: 0 auto;
+    }
+    nav div.nav2 {
+        display: none;
+    }
+    nav {
+        font-size: 14px;
+        text-align: center;
+
+    }
+    nav div.nav1  a{
+        font-size: 14px;
+        margin: 0 auto;
+
+    }
+    nav div.nav2 {
+      
+    }
+    footer div.nav2 {
+        visibility: visible;
+        width: 100%;
+        text-align: center;
+
+    }
+    footer div.nav2 a {
+        padding: 10px;
+    }
+    footer div.nav2 a i {
+        font-size: 30px;
+    }
+    footer .hr {
+        padding-top: 10px;
+    }
+    main section.main div.mainp {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+    main section.main div.mainphoto {
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        float: none;
+    }
+    main section#about div#aboutp {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+    main section#about div#aboutp h2  {
+        font-size: 26px;
+        padding-right: 5px;
+        font-weight: 400;
+    }
+    main section#about div#aboutp h2 span {
+        font-size: 30px;
+        font-weight: 400;
+    }
+    main section#about div#aboutphoto {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
+@media screen and (max-width: 393px) {
+    header h1 {
+    padding-right: 5px;;
+    }
+    main {
+        padding: 18px;
+        margin: 0 auto;
+    }
+    main section.main {
+        padding: 25px 0;
+    }
+   
+    footer div.adress2 div.adress21 {
+        display: flex;
+        padding-right: 10px;
+    }
+    header {
+        
+
+    }
+    header div.logo {
+        
+    }
+    header a {
+        display: none;
+    }
+    footer div.nav2 a.lang {
+        display: inline-block;
+    }
+    main section#about div#aboutp h2 {
+        font-size: 16px;
+        padding-right: 5px;
+        font-weight: 200;
+    }
+
+
+}
+@media screen and (max-width: 330px) {
+    header h1 {
+        font-size: 18px;
+    }
+    main section#about div#aboutp h2 {
+        font-size: 14px;
+        font-weight: 200;
+    }
+}
+@media screen and (max-width: 320px) {
+    main section#about div#aboutp h2 {
+
+        font-size: 12px;
+        font-weight: 200;
+    }
+}
+
